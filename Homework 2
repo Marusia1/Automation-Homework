@@ -1,0 +1,61 @@
+    // task 1 (Area of rectangle)
+        int length = 4;
+        int width = 5;
+        int sqrt = length * width;
+
+        System.out.println ( "Square root is: " + sqrt );
+
+        // task 2 (BMI using double)
+        double weight = 60;
+        double height = 1.6;
+        double BMI = weight / (height * height);
+
+        System.out.println( "BMI value is: " + BMI);
+
+        // task 3 (Temperature converter, using double) only after adding (double) - Pop-up helped:) this values were calculated!!!!!
+        double c = 35.5;
+        double f = ((double) 9 /5) * c + 32;
+        System.out.println( "Convert temperature to the Fahrenheit is: " + f);
+
+
+        // task 4 (SHORT 32767 + 1)
+        short number = 32767;
+        int value =  number + 1;
+
+        System.out.println( "Increment by 1 value is: " + value++);
+
+        // task 5 (Rounding numbers) - calculations is incorrect, because value after the point was only deducted but not rounded !!!!!
+        double number1 = 5.75;
+        int number2 = (int) number1;
+        System.out.println( "Rounding decimal value into integer is: " + number2);
+
+        // task 5.1 (Rounding numbers) - got help with this one
+        double number3 = 5.75;
+        var number4 = Math.round(number3);
+        System.out.println( "Rounding decimal value into integer is: " + number4);
+
+
+        // task 6 (boolean, adult or not)
+        int age = 25;
+        boolean isAgeOk = age >= 18;
+        System.out.println( "Age greater or equal to 18 value is: " + isAgeOk);
+
+        // Additional task 7 (Char, shifted on 3 values in alphabetic order) - NOT ME:(
+        char symbol = 'b';
+        System.out.println((int) symbol);  //how to check char (theoretical part)
+        int shift = 3;
+        char shifted = (char) (symbol + shift);
+        System.out.println("Shift in alphabetic order is: " + symbol);
+        System.out.println("Shift in alphabetic order is: " + shifted);
+
+        // Additional task 8 (Scanner, console) - NOT ME:(
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Enter the first value through keyboard is: ");
+        int num1 = scanner.nextInt(); //Метод nextInt() считывает и возвращает введенное число
+
+        System.out.println("Enter the second value through keyboard is: ");
+        int num2 = scanner.nextInt();
+
+        int result = num1 * num2;
+        System.out.println( "Result value is: " + result);
